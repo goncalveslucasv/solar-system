@@ -66,9 +66,9 @@ utilizando como referencia el siguiente algoritmo:
 ## Uso
 
 ### Vulcan Api
-    http://ec2-18-191-85-111.us-east-2.compute.amazonaws.com:3000/day
+    http://ec2-18-191-85-111.us-east-2.compute.amazonaws.com:3001/clima/day
     
-EJ: http://ec2-18-191-85-111.us-east-2.compute.amazonaws.com:3000/15
+EJ: http://ec2-18-191-85-111.us-east-2.compute.amazonaws.com:3001/clima/dia/1
 
 ### Stack
  - Node v10
