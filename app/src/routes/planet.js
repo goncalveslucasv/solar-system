@@ -11,7 +11,7 @@ router
 	.get('/', (req, res) => {
 		res.send('Welcome. Please enter the day');
 	})
-	.get('/:id(\\d+)/', (req, res, next) => {
+	.get('/weather/day/:id(\\d+)/', (req, res, next) => {
 		const day = req.params.id;
 
 		if(day > (oneYear * 10))
