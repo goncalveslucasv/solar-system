@@ -71,7 +71,7 @@ utilizando como referencia el siguiente algoritmo:
 EJ: http://ec2-18-191-85-111.us-east-2.compute.amazonaws.com:3001/weather/day/1
 
 ### Stack
- - Node v10
+ - node v10
  - mysql
 
 Git clone
