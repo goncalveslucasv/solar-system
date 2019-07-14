@@ -30,15 +30,13 @@ const centralPointInsideTriangle = Points => {
 	const [pointA, pointB, pointC] = Points;
 
 	const abc = differenceOfTheProductsOfTheDifference(pointA, pointB, pointC);
-	const AA = differenceOfTheProductsOfTheDifference(pointA, pointB, centralPoint);
-	const BB = differenceOfTheProductsOfTheDifference(pointB, pointC, centralPoint);
-	const CC = differenceOfTheProductsOfTheDifference(pointC, pointA, centralPoint);
+	const abx = differenceOfTheProductsOfTheDifference(pointA, pointB, centralPoint);
+	const bcx = differenceOfTheProductsOfTheDifference(pointB, pointC, centralPoint);
+	const cax = differenceOfTheProductsOfTheDifference(pointC, pointA, centralPoint);
 
-	return abc * AA > 0 &&
-	abc * BB > 0 &&
-	abc * CC > 0;
-
-
+	return abc * abx > 0 &&
+	abc * bcx > 0 &&
+	abc * cax > 0;
 };
 
 module.exports = {
