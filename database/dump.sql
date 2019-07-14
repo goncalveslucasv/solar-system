@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.26, for Linux (x86_64)
 --
--- Host: 127.0.0.1    Database: xpay
+-- Host: 127.0.0.1    Database: planets
 -- ------------------------------------------------------
 -- Server version	5.6.28
 
