@@ -58,5 +58,31 @@ Para calcular si el sol se encuentra dentro del triangulo se utilizo la siguient
 utilizando como referencia el siguiente algoritmo: 
 [https://jsfiddle.net/jniac/rctb3gfL/](https://jsfiddle.net/jniac/rctb3gfL/)
 
-![enter image description here](https://github.com/goncalveslucasv/solar-system/blob/master/snapshots/triangle.png?raw=true)
+<img src="https://github.com/goncalveslucasv/solar-system/blob/master/snapshots/triangle.png?raw=true" width="400" height="400">
 
+### Estructura de datos
+![](https://github.com/goncalveslucasv/solar-system/blob/master/snapshots/der.png?raw=true)
+
+## Uso
+
+### Stack
+ - Node v10
+ - mysql
+
+Git clone
+
+    git@github.com:goncalveslucasv/solar-system.git
+
+Levantamos el stack
+
+    docker-compose up --build -d
+
+
+#### Scripts
+Calcula los periodos climáticos en 10 años
+
+    yarn run:job
+    
+Popula la base de datos
+
+    yarn run:job:persist
