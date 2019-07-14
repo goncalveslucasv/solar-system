@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  planets:
+    build: ./app
+    env_file:
+      - ./.env
+    depends_on:
+      - mysql
+    volumes:
+      - ./app/src:/app/src
+    ports:
+      - "3000:3000"
+    networks:
+      - planets
+
+  mysql:
+    image: mariadb:10.3
+    container_name: mariadb
+    volumes:
+      - ./database/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    env_file:
+      - ./.env
+    ports:
+      - "3306:3306"
+    networks:
+      - planets
+
+networks:
+  planets:
+    driver: bridge

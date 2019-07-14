@@ -1,0 +1,24 @@
+{
+  "name": "job",
+  "version": "1.0.0",
+  "main": "src/jobs/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server",
+    "dev": "nodemon src/server",
+    "run:job": "node src/jobs/computeWeather.js",
+    "run:job:persist": "node src/jobs/saveSpaceLog.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
+  }
+}
